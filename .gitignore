@@ -1,0 +1,6 @@
+/.git
+/vendor
+/composer.lock
+/.phpunit.cache
+/.phpunit.result.cache
+/var

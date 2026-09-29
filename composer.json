@@ -1,0 +1,28 @@
+{
+    "name": "monkeyscloud/monkeyslegion-inertia",
+    "description": "Inertia.js server adapter for MonKeysLegion — bridges PHP controllers with React/Vue SPAs.",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=8.4",
+        "monkeyscloud/monkeyslegion-core": "*@dev",
+        "monkeyscloud/monkeyslegion-http": "*@dev",
+        "monkeyscloud/monkeyslegion-session": "*@dev",
+        "monkeyscloud/monkeyslegion-router": "*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonkeysLegion\\Inertia\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MonkeysLegion\\Inertia\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
