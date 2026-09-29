@@ -19,8 +19,8 @@ final class InertiaServiceProvider implements ServiceProviderInterface
 
             // Set version from Vite manifest if available
             $manifestPath = defined('ML_BASE_PATH')
-                ? ML_BASE_PATH . '/public/assets/build/manifest.json'
-                : 'public/assets/build/manifest.json';
+                ? ML_BASE_PATH . '/public/build/manifest.json'
+                : 'public/build/manifest.json';
 
             if (is_file($manifestPath)) {
                 $inertia->version(md5_file($manifestPath) ?: '');
